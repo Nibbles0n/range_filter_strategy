@@ -1,0 +1,194 @@
+============================================================
+MALCOLM'S POLYMARKET STRATEGY - PAPER TRADING
+============================================================
+ATR: $107.99
+Current bar: O=66087
+============================================================
+
+👀 Paper trading...
+
+Subscribed
+
+  📝 PAPER SHORT at $66026.40 | Wick: $70.24 | MaxRev: $34.52
+
+  📝 PAPER SHORT at $66026.40 | Wick: $70.24 | MaxRev: $33.75
+
+  📝 PAPER SHORT at $66026.39 | Wick: $70.24 | MaxRev: $33.07
+
+  📝 PAPER SHORT at $66026.39 | Wick: $70.24 | MaxRev: $32.36
+
+  📝 PAPER SHORT at $66016.34 | Wick: $70.58 | MaxRev: $31.63
+
+  📝 PAPER SHORT at $66016.34 | Wick: $70.58 | MaxRev: $30.90
+
+  📝 PAPER SHORT at $66017.43 | Wick: $70.58 | MaxRev: $30.18
+
+  📝 PAPER SHORT at $66017.43 | Wick: $70.58 | MaxRev: $29.48
+
+  📝 PAPER SHORT at $66017.43 | Wick: $70.58 | MaxRev: $28.74
+
+  📝 PAPER SHORT at $66017.43 | Wick: $70.58 | MaxRev: $28.03
+
+  📝 PAPER SHORT at $66017.43 | Wick: $70.58 | MaxRev: $27.31
+
+  📝 PAPER SHORT at $66017.43 | Wick: $70.58 | MaxRev: $26.56
+
+  📝 PAPER SHORT at $66017.43 | Wick: $70.58 | MaxRev: $25.87
+
+  📝 PAPER SHORT at $66017.43 | Wick: $70.58 | MaxRev: $25.14
+
+  📝 PAPER SHORT at $66035.47 | Wick: $70.58 | MaxRev: $24.44
+
+  📝 PAPER SHORT at $66035.47 | Wick: $70.58 | MaxRev: $23.71
+
+  📝 PAPER SHORT at $66035.47 | Wick: $70.58 | MaxRev: $22.98
+
+  📝 PAPER SHORT at $66035.48 | Wick: $70.58 | MaxRev: $22.28
+
+  📝 PAPER SHORT at $66035.47 | Wick: $70.58 | MaxRev: $21.55
+
+  📝 PAPER SHORT at $66040.92 | Wick: $70.58 | MaxRev: $20.84
+
+  📝 PAPER SHORT at $66040.92 | Wick: $70.58 | MaxRev: $20.11
+
+  📝 PAPER SHORT at $66042.80 | Wick: $70.58 | MaxRev: $19.37
+
+  📝 PAPER SHORT at $66042.80 | Wick: $70.58 | MaxRev: $18.68
+
+  📝 PAPER SHORT at $66038.05 | Wick: $70.58 | MaxRev: $17.95
+
+  📝 PAPER SHORT at $66036.55 | Wick: $70.58 | MaxRev: $17.21
+
+  📝 PAPER SHORT at $66036.55 | Wick: $70.58 | MaxRev: $16.51
+
+  📝 PAPER SHORT at $66036.54 | Wick: $70.58 | MaxRev: $15.78
+
+  📝 PAPER SHORT at $66036.55 | Wick: $70.58 | MaxRev: $15.06
+
+  📝 PAPER SHORT at $66036.55 | Wick: $70.58 | MaxRev: $14.33
+
+  📝 PAPER SHORT at $66036.55 | Wick: $70.58 | MaxRev: $13.62
+
+  📝 PAPER SHORT at $66036.54 | Wick: $70.58 | MaxRev: $12.91
+
+  📝 PAPER SHORT at $66036.54 | Wick: $70.58 | MaxRev: $12.18
+
+  📝 PAPER SHORT at $66036.54 | Wick: $70.58 | MaxRev: $11.48
+
+  📝 PAPER SHORT at $66036.54 | Wick: $70.58 | MaxRev: $10.75
+
+  📝 PAPER SHORT at $66036.55 | Wick: $70.58 | MaxRev: $10.03
+
+  📝 PAPER SHORT at $66036.55 | Wick: $70.58 | MaxRev: $9.32
+
+  📝 PAPER SHORT at $66036.54 | Wick: $70.58 | MaxRev: $8.58
+
+  📝 PAPER SHORT at $66036.55 | Wick: $70.58 | MaxRev: $7.87
+
+  📝 PAPER SHORT at $66036.54 | Wick: $70.58 | MaxRev: $7.15
+
+  📝 PAPER SHORT at $66036.54 | Wick: $70.58 | MaxRev: $6.42
+
+  📝 PAPER SHORT at $66036.54 | Wick: $70.58 | MaxRev: $5.71
+
+  📝 PAPER SHORT at $66036.55 | Wick: $70.58 | MaxRev: $5.00
+
+  📝 PAPER SHORT at $66036.54 | Wick: $70.58 | MaxRev: $4.28
+
+  📝 PAPER LONG at $66036.55 | Wick: $8.52 | MaxRev: $3.56
+
+  📝 PAPER SHORT at $66036.55 | Wick: $70.58 | MaxRev: $3.56
+
+  📝 PAPER LONG at $66036.55 | Wick: $8.52 | MaxRev: $2.84
+
+  📝 PAPER SHORT at $66036.55 | Wick: $70.58 | MaxRev: $2.84
+
+  📝 PAPER LONG at $66085.78 | Wick: $65.01 | MaxRev: $31.49
+
+  📝 PAPER LONG at $66085.77 | Wick: $65.01 | MaxRev: $30.83
+
+  📝 PAPER LONG at $66085.78 | Wick: $65.01 | MaxRev: $30.16
+
+  📝 PAPER LONG at $66085.77 | Wick: $65.01 | MaxRev: $29.46
+
+  📝 PAPER LONG at $66085.77 | Wick: $65.01 | MaxRev: $28.80
+
+  📝 PAPER LONG at $66085.78 | Wick: $65.01 | MaxRev: $28.15
+
+  📝 PAPER LONG at $66085.77 | Wick: $65.01 | MaxRev: $27.47
+
+  📝 PAPER LONG at $66085.77 | Wick: $65.01 | MaxRev: $26.79
+
+  📝 PAPER LONG at $66085.77 | Wick: $65.01 | MaxRev: $26.13
+
+  📝 PAPER LONG at $66087.99 | Wick: $67.22 | MaxRev: $25.46
+
+  📝 PAPER LONG at $66090.34 | Wick: $69.58 | MaxRev: $24.77
+
+  📝 PAPER LONG at $66090.34 | Wick: $69.58 | MaxRev: $24.12
+
+  📝 PAPER LONG at $66090.34 | Wick: $69.58 | MaxRev: $23.45
+
+  📝 PAPER LONG at $66090.35 | Wick: $69.58 | MaxRev: $22.78
+
+  📝 PAPER LONG at $66095.04 | Wick: $74.27 | MaxRev: $22.10
+
+  📝 PAPER LONG at $66095.07 | Wick: $74.31 | MaxRev: $21.43
+
+  📝 PAPER LONG at $66095.08 | Wick: $74.31 | MaxRev: $20.77
+
+  📝 PAPER LONG at $66095.07 | Wick: $74.31 | MaxRev: $20.08
+
+  📝 PAPER LONG at $66095.08 | Wick: $74.31 | MaxRev: $19.42
+
+  📝 PAPER LONG at $66095.08 | Wick: $74.31 | MaxRev: $18.75
+
+  📝 PAPER LONG at $66095.08 | Wick: $74.31 | MaxRev: $18.08
+
+  📝 PAPER LONG at $66095.08 | Wick: $74.31 | MaxRev: $17.41
+
+  📝 PAPER LONG at $66095.07 | Wick: $74.31 | MaxRev: $16.74
+
+  📝 PAPER LONG at $66107.07 | Wick: $86.30 | MaxRev: $16.07
+
+  📝 PAPER LONG at $66111.44 | Wick: $90.67 | MaxRev: $15.38
+
+  📝 PAPER LONG at $66111.44 | Wick: $90.67 | MaxRev: $14.04
+
+  📝 PAPER LONG at $66111.43 | Wick: $90.67 | MaxRev: $13.35
+
+  📝 PAPER LONG at $66111.44 | Wick: $90.67 | MaxRev: $12.71
+
+  📝 PAPER LONG at $66106.41 | Wick: $90.67 | MaxRev: $12.04
+
+  📝 PAPER LONG at $66100.01 | Wick: $90.67 | MaxRev: $11.37
+
+  📝 PAPER LONG at $66100.00 | Wick: $90.67 | MaxRev: $10.70
+
+  📝 PAPER LONG at $66100.00 | Wick: $90.67 | MaxRev: $10.01
+
+  📝 PAPER LONG at $66100.01 | Wick: $90.67 | MaxRev: $9.34
+
+  📝 PAPER LONG at $66100.00 | Wick: $90.67 | MaxRev: $8.68
+
+  📝 PAPER LONG at $66100.00 | Wick: $90.67 | MaxRev: $8.02
+
+  📝 PAPER LONG at $66100.01 | Wick: $90.67 | MaxRev: $7.35
+
+  📝 PAPER LONG at $66100.01 | Wick: $90.67 | MaxRev: $6.66
+
+  📝 PAPER LONG at $66100.01 | Wick: $90.67 | MaxRev: $6.00
+
+  📝 PAPER LONG at $66100.00 | Wick: $90.67 | MaxRev: $5.33
+
+  📝 PAPER LONG at $66100.00 | Wick: $90.67 | MaxRev: $4.66
+
+  📝 PAPER LONG at $66100.01 | Wick: $90.67 | MaxRev: $3.99
+
+  📝 PAPER LONG at $66100.00 | Wick: $90.67 | MaxRev: $3.32
+
+  📝 PAPER SHORT at $66100.00 | Wick: $7.77 | MaxRev: $3.32
+
+  📝 PAPER LONG at $66100.01 | Wick: $90.67 | MaxRev: $2.65
+
+  📝 PAPER SHORT at $66100.01 | Wick: $7.77 | MaxRev: $2.65
