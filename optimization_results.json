@@ -1,0 +1,21 @@
+{
+  "best_entry_filters": {
+    "min_volatility": 0.008,
+    "min_band_width": 0.005,
+    "excluded_hours": [
+      5
+    ]
+  },
+  "best_exit_params": {
+    "trail_pct": 0.02,
+    "isl_pct": 0.015
+  },
+  "result": {
+    "total_return": 0.1585997864784804,
+    "final_capital": 10015.859978647848,
+    "total_trades": 134,
+    "win_rate": 53.73134328358209,
+    "entries_used": 134,
+    "entries_total": 192581
+  }
+}
