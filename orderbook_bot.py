@@ -35,6 +35,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # ── Config ───────────────────────────────────────────────────────────────────
+# === CORE TRADING ===
 INITIAL_CAPITAL = 50         # Starting capital in dollars
 RISK_PCT = 0.02             # Max % of account risked per trade (2% = $1 on $50)
 POLYMARKET_FEE = 0.01        # 1% on winnings
@@ -42,7 +43,21 @@ MAX_ENTRY_PRICE = 0.60       # Skip if YES > this (filters expensive entries)
 SLIPPAGE_THRESHOLD = 0.03   # Max 3% worse than midpoint we'll accept
 MIN_POSITION = 1              # Minimum $ to bother trading
 PLACE_LIVE_ORDERS = False   # True = real Polymarket orders (requires funded account)
-TOKENS = ['btc', 'eth', 'sol', 'xrp', 'doge']
+
+# === TOKENS — Research-verified momentum signals (2026-03-31) ===
+# BTC: INVERSE momentum — 47.8% WR, larger deviations predict LOSSES → DROPPED
+# XRP: NOISE — 43% WR, deviation tells us nothing about direction → DROPPED
+# DOGE: NOISE — 56% WR but Δ=+0.07, statistical noise → PAUSED
+# SOL: STRONG momentum — 54.5% WR, Δ=+3.17, large deviations predict WIN → KEEP
+# ETH: WEAK momentum — 52.6% WR, Δ=+0.60 → KEEP
+TOKENS = ['eth', 'sol']
+
+# === CONVICTION SIZING — volatility-adjusted deviation ratio ===
+# SOL/ETH momentum is STRONGER when deviations are larger
+# Scale up position when deviation/threshold is high
+CONVICTION_MULTIPLIER_ENABLED = True
+CONVICTION_THRESHOLD_2X = 2.5   # deviation/threshold > 2.5x → 1.5x position
+CONVICTION_THRESHOLD_3X = 3.5   # deviation/threshold > 3.5x → 2.0x position
 
 # === TELEGRAM ===
 TELEGRAM_BOT_TOKEN = ""  # Get from @BotFather
@@ -1032,6 +1047,22 @@ def check_signal(token):
     max_from_risk = account_balance * RISK_PCT
     effective_max_position = max(max_from_risk, MIN_POSITION)
     
+    # Conviction multiplier: SOL/ETH momentum is stronger at high deviations
+    # Volatility-adjusted deviation ratio tells us how strong the signal is
+    conviction_multiplier = 1.0
+    if CONVICTION_MULTIPLIER_ENABLED:
+        deviation_ratio = deviation / threshold if threshold > 0 else 1.0
+        if deviation_ratio >= CONVICTION_THRESHOLD_3X:
+            conviction_multiplier = 2.0
+        elif deviation_ratio >= CONVICTION_THRESHOLD_2X:
+            conviction_multiplier = 1.5
+        # Also boost slightly for SOL since it has the strongest momentum signal
+        if token == 'sol' and deviation_ratio >= 2.0:
+            conviction_multiplier = max(conviction_multiplier, 1.5)
+    
+    # Apply conviction multiplier to max position
+    effective_max_position = min(effective_max_position * conviction_multiplier, max_from_risk * 2.0)
+    
     # First: calculate adaptive position size based on liquidity (capped by risk)
     adaptive = calculate_adaptive_position_size(orderbook, side='BUY', midpoint=midpoint, max_budget=effective_max_position)
     # Position is min of what the orderbook allows AND what our risk rule allows
@@ -1054,12 +1085,15 @@ def check_signal(token):
             orderbook_spread = round(float(asks[0]["price"]) - float(bids[0]["price"]), 4)
     
     # Record pending trade with FULL transparency
+    deviation_ratio = deviation / threshold if threshold > 0 else 1.0
     s['pending_trade'] = {
         'signal': direction,
         'expected': expected,
         'midpoint': midpoint,
         'fill_result': fill_result,
         'adaptive_position': actual_position,
+        'conviction_multiplier': conviction_multiplier,
+        'deviation_ratio': deviation_ratio,
         'max_acceptable_slippage': SLIPPAGE_THRESHOLD * 100,
         'bar_open': s['bar_open'],
         'atr_per_bar': s['atr_per_bar'],
@@ -1075,12 +1109,13 @@ def check_signal(token):
     pct = fill_result.get("pct_worse_than_midpoint")
     flags = fill_result.get("liquidity_flags", [])
     
+    conv_str = f" | {conviction_multiplier:.1f}x conviction" if conviction_multiplier > 1.0 else ""
     if vwap:
-        fill_msg = f"→ Pos: ${actual_position:.2f} | VWAP: ${vwap:.4f} ({pct:+.2f}% vs mid) | {flags}"
+        fill_msg = f"→ Pos: ${actual_position:.2f}{conv_str} | VWAP: ${vwap:.4f} ({pct:+.2f}% vs mid) | {flags}"
     else:
-        fill_msg = f"→ Pos: ${actual_position:.2f} | ⚠️ ORDERBOOK UNAVAILABLE"
+        fill_msg = f"→ Pos: ${actual_position:.2f}{conv_str} | ⚠️ ORDERBOOK UNAVAILABLE"
     
-    print(f"\n🚦 {token.upper()} {direction} SIGNAL | Dev: ${deviation:.2f} > ${threshold:.4f}")
+    print(f"\n🚦 {token.upper()} {direction} SIGNAL | Dev: ${deviation:.2f} > ${threshold:.4f} ({deviation_ratio:.1f}x ratio)")
     print(f"   Midpoint: ${midpoint:.4f} | {fill_msg}")
     print(f"   Time left: {time_remaining:.1f}m | Bar open: ${s['bar_open']:.2f}")
     
